@@ -211,6 +211,15 @@ a.text {
 	font-weight:1000;
 	margin-bottom:30px;
 }
+.stats-little-text{
+	color:white;
+	font-size:9pt;
+	text-align:center;
+	font-weight:100;
+	margin-top:30px;
+	
+	border-bottom: solid gray 1px;
+}
 .chart-wrapper{
 	display: flex;
 	
@@ -221,6 +230,170 @@ a.text {
 .chart-container{
 	width: 55%;
 }
+
+
+.design-container{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+}
+
+.design-title{
+	margin-top: 70px;
+	color:white;
+	font-size:33pt;
+	text-align:center;
+	font-weight:1000;
+}
+.design-subtitle{
+	margin-top: 20px;
+	color:white;
+	font-size:11pt;
+	text-align:center;
+	font-weight:100;
+}
+.design-borderbox-wrapper{
+	width:100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+
+}
+.design-borderbox{
+	width:60%;
+	
+	margin-top: 20px;
+	color:white;
+	font-size:20pt;
+	border: solid gray 2px;
+	border-radius:14px;
+	text-align:center;
+	font-weight:100;
+}
+
+.dlss-presentation {
+	width: 100%;
+	height:900px;
+	background-image: url("../imgs/dlss.jpg");
+	object-fit: cover;
+}
+.dlss-title{
+	padding-top: 70px;
+	color:white;
+	font-size:30pt;
+	text-align:center;
+	font-weight:1000;
+}
+.dlss-subtitle{
+	margin-top: 20px;
+	color:white;
+	font-size:17pt;
+	text-align:center;
+	font-weight:1000;
+}
+.dlss-text{
+	margin-top: 20px;
+	color:white;
+	font-size:12pt;
+	text-align:center;
+	font-weight:100;
+}
+.dlss-button-wrapper{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.dlss-button{
+	background-color: #18a111;
+	padding:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width: 250px;
+	margin-top: 20px;
+	color:white;
+	font-size:13pt;
+	text-align:center;
+	font-weight:1000;
+}
+.dlss-button:hover{
+	background-color: #1fd416;
+}
+
+.dlss-youtube-wrapper{
+	margin-top: 20px;
+	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+.dlss-youtube-wrapper iframe{
+	border: solid gray 4px;
+}
+/*#1eff12*/
+
+.raytracing-presentation {
+	width: 100%;
+	height:500px;
+	background-image: url("../imgs/raytracing.jpg");
+	background-attachment: fixed;
+	object-fit: cover;
+}
+.raytracing-title{
+	padding-top: 70px;
+	color:white;
+	font-size:30pt;
+	text-align:center;
+	font-weight:1000;
+}
+.raytracing-subtitle{
+	margin-top: 20px;
+	color:white;
+	font-size:17pt;
+	text-align:center;
+	font-weight:1000;
+}
+.raytracing-text{
+	margin-top: 20px;
+	color:white;
+	font-size:12pt;
+	text-align:center;
+	font-weight:100;
+}
+.raytracing-cyberpunk-logo-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.raytracing-cyberpunk-logo{
+	width: 400px;
+}
+.raytracing-cyberpunk-logo img{
+	width: 100%;
+	height: auto;
+}
+
+.black-block{
+	background-color: black;
+	width: 100%;
+	height:150px;
+}
+
+.reflex-wrapper{
+	width: 100%;
+	height: 400px;
+	background-image: url("../imgs/nvidia.jpg");
+	object-fit: cover;
+	background-position: left;
+	background-size: 70% auto;
+	background-repeat: no-repeat;
+	display:flex;
+	justify-content: right;
+}
+.reflex-right-content{
+	width:40%;
+}
+
 @keyframes slide{
     0%{
         transform: translateX(0);
