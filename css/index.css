@@ -1,0 +1,249 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	
+	width:100%;
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+}
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color:black;
+}
+.header-stick{
+	position:sticky;
+	top:0;
+	overflow:visible;
+	z-index:3;
+}
+.header{
+	width: 100%;
+	height: 40px;
+	display:flex;
+	background-color:white;
+	
+	justify-content:left;
+	border-bottom: 1px solid black;
+}
+.button-wrapper{
+	width:90%;
+	display:flex;
+	justify-content:space-between;
+}
+.nav-buttons{
+	width:65%;
+	display:flex;
+	justify-content:left;
+}
+.nav-button{
+	display:flex;
+	height:100%;
+	justify-content:center;
+	align-items:center;
+	
+	margin-left:10px;
+	margin-right:10px;
+}
+.logo{
+	object-fit:cover;
+	width:3%;
+	margin-right:5%;
+}
+.logo img {
+	height: 100%;
+}
+
+.slider-wrapper{
+	width:300%;
+	
+    display: flex;
+	flex-direction: row;
+    animation: slide 15s infinite;
+}
+.slider{
+	contain: paint;
+	
+	box-sizing: border-box;
+	
+}
+.slide{
+	box-sizing: border-box;
+	width:100%;
+	height:900px;
+	background-attachment:fixed;
+}
+
+
+.slide img{
+	
+	
+
+	object-fit:cover;
+	width:100%;
+	height:100%;
+}
+.slide h1 {
+	position:relative;
+	top:-80%;
+	font-size:40pt;
+	text-align:center;
+	
+	color:white;
+}
+.slide h2 {
+	position:relative;
+	top:-82%;
+	font-size:20pt;
+	text-align:center;
+	
+	color:white;
+}
+.content{
+	width:100%;
+	
+	display:block;
+}
+
+.description{
+	width:100%;
+	height:500px;
+	background-color: #1D1D1D;
+	display:flex;
+}
+.des-left-side{
+	width:50%;
+}
+.des-text-title{
+	color:#00B55C;
+	font-size:40pt;
+	text-align:left;
+	font-weight:1000;
+	
+	margin:20px;
+}
+.des-text-subtitle{
+	position:relative;
+	top:-1%;
+	margin-left:20px;
+	color:white;
+	font-size:30pt;
+	font-weight:1000;
+}
+.des-right-side{
+	width:50%;
+}
+.des-right-side img{
+	object-fit: cover;
+	filter:blur(2px);
+	height:100%;
+	width:100%;
+}
+.des-text{
+	margin-left:20px;
+	color:white;
+	font-size:14pt;
+	
+}
+
+.mini-des{
+	background-color:black;
+	width:100%;
+	
+	
+}
+.mini-des-mastertitle{
+	width:100%;
+	
+	color:white;
+	font-size:30pt;
+	text-align:center;
+	font-weight:1000;
+}
+.mini-des-line-wrapper{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.mini-des-line{
+	width:90%;
+	height:200px;
+	
+	display:flex;
+}
+.mini-des-element{
+	width:25%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.mini-des-img {
+	height:70px;
+	width: 70px;
+}
+.mini-des-img img {
+	height:100%;
+	object-fit: cover;
+}
+.mini-des-title{
+	color:white;
+	font-size:13pt;
+	text-align:center;
+	font-weight:1000;
+}
+.mini-des-subtitle{
+	color:white;
+	font-size:13pt;
+	text-align:center;
+	font-weight:200;
+}
+
+.stats {
+	background-color: black;
+}
+.stats-title{
+	color:white;
+	font-size:30pt;
+	text-align:center;
+	font-weight:1000;
+	margin-bottom:30px;
+}
+.chart-wrapper{
+	display: flex;
+	
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+}
+.chart-container{
+	width: 55%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-33.333%);
+    }
+    50%{
+        transform: translateX(-33.333%);
+    }
+    55%{
+        transform: translateX(-66.666%);
+    }
+    75%{
+        transform: translateX(-66.666%);
+    }
+    80%{
+        transform: translateX(-66.666%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
