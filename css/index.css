@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 .master{
-	overflow: hidden;
+	contain: paint;
 }
 body{
 	

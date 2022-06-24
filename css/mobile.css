@@ -4,7 +4,7 @@
 }
 
 .master{
-	overflow: hidden;
+	contain: paint;
 }
 
 body{
