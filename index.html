@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		
+		<meta charset="utf-8">
+		
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="script/histogram.js"></script>
+		<script type="text/javascript" src="script/popup.js"></script>
+	</head>
+	<body>
+		<div class="popup" id="popup" onclick="popupHide()">
+			<div class="popup-sorry" id="popup-sorry">
+				<div class="popup-sorry-title">УПС, ЧТО ТО ПОШЛО НЕ ТАК!</div>
+				<div class="popup-sorry-text">Данный продукт более недоступен на территории РФ.</div>
+			</div>
+		</div>
+		<div class="master">
+			<div class="header-stick"><div class="header">
+				<div class="logo"><img src="imgs/logo.png"></div>
+				<div class="button-wrapper">
+					<div class="nav-buttons">
+						<div class="nav-button" onclick="scroll_to('specs')"><a class="text"><div><b>Спецификации</b></div></a></div>
+						<div class="nav-button" onclick="scroll_to('performance')"><a class="text"><div><b>Производительность</b></div></a></div>
+						<div class="nav-button" onclick="scroll_to('description')"><a class="text"><div><b>Достоинства</b></div></a></div>
+						<div class="nav-button" onclick="popupShow()"><a class="text"><div><b>Приобрести</b></div></a></div>
+					</div>
+				</div>
+			</div></div>
+			
+			
+			
+			<div class="content">
+				<div class="slider">
+					<div class="slider-wrapper">
+							<div class="slide">
+								<img src="imgs/slide-1.jpg">
+								<h1>Видеокарта нового<br> поколения</h1>
+								<h2>RTX, Ray-Tracing</h2>
+							</div>
+							<div class="slide">
+								<img src="imgs/slide-2.webp">
+								<h1>Лучшая в своем роде</h1>
+								<h2>И среди конкурентов</h2>
+							</div>
+							<div class="slide">
+								<img src="imgs/slide-3.jpg">
+								<h1>Новые технологические решения</h1>
+								<h2>Для гейминга на новом уровне</h2>
+							</div>
+							
+					</div>
+				</div>
+				<div id="description" class="description">
+					<div class="des-left-side">
+						<div class="des-text-title">ВИДЕОКАРТЫ<br>GEFORCE RTX 3080</div>
+						<div class="des-text-subtitle">ВЫСШИЙ УРОВЕНЬ ИГРЫ</div>
+						<div class="des-text">
+							Видеокарты GeForce RTX™ 3080 Ti и GeForce RTX 3080 обеспечивают рекордную производительность для геймеров, работая на базе Ampere — архитектуры NVIDIA RTX второго поколения. Они оснащены улучшенными ядрами RT и тензорными ядрами, новыми потоковыми мультипроцессорами и высокоскоростной памятью G6X для потрясающих игровых возможностей.
+						</div>
+					</div>
+					<div class="des-right-side">
+						<img src="imgs/slide-2.webp">
+					</div>
+				</div>
+				<div class="mini-des">
+					<div class="mini-des-mastertitle">ТОЛЬКО В GEFORCE RTX</div>
+					<div class="mini-des-line-wrapper">
+						<div class="mini-des-line">
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/gpu-icon.svg"></div>
+								<div class="mini-des-title">САМЫЕ БЫСТРЫЕ В МИРЕ ВИДЕОКАРТЫ</div>
+								<div class="mini-des-subtitle">Архитектура NVIDIA Ampere</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/ray-tracing-icon.svg"></div>
+								<div class="mini-des-title">МАКСИМАЛЬНО РЕАЛИСТИЧНОЕ ИЗОБРАЖЕНИЕ</div>
+								<div class="mini-des-subtitle">2-е поколение ядер RT</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/dlss-icon.svg"></div>
+								<div class="mini-des-title">СУЩЕСТВЕННЫЙ ПРИРОСТ FPS</div>
+								<div class="mini-des-subtitle">NVIDIA DLSS</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/reflex-icon.svg"></div>
+								<div class="mini-des-title">МИНИМАЛЬНЫЙ ИНПУТ-ЛАГ</div>
+								<div class="mini-des-subtitle">NVIDIA Reflex</div>
+							</div>
+						</div>
+					</div>
+					<div class="mini-des-line-wrapper">
+						<div class="mini-des-line">
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/game-ready-driver-icon.svg"></div>
+								<div class="mini-des-title">НАИЛУЧШАЯ ПРОИЗВОДИТЕЛЬНОСТЬ В КАЖДОЙ ИГРЕ</div>
+								<div class="mini-des-subtitle">Драйверы Game Ready</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/encode-icon.svg"></div>
+								<div class="mini-des-title">СОЗДАНЫ ДЛЯ СТРИМИНГА</div>
+								<div class="mini-des-subtitle">Энкодер NVIDIA</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/broadcast-icon.svg"></div>
+								<div class="mini-des-title">НОВЫЙ УРОВЕНЬ ГОЛОСОВЫХ ЧАТОВ И ВИДЕОЗВОНКОВ</div>
+								<div class="mini-des-subtitle">NVIDIA Broadcast</div>
+							</div>
+							<div class="mini-des-element">
+								<div class="mini-des-img"><img src="imgs/media-and-entertainment-icon.svg"></div>
+								<div class="mini-des-title">БЫСТРАЯ РАБОТА С ГРАФИКОЙ</div>
+								<div class="mini-des-subtitle">NVIDIA Studio</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div id="performance" class="stats">
+					<div class="stats-title">ПРОИЗВОДИТЕЛЬНОСТЬ</div>
+					<div class="chart-wrapper"><div class="chart-container"><div id="histogram" class="stats-histogram"></div></div>
+				</div>
+				<div class="stats-little-text">
+						4K, максимальные настройки, Ryzen 9 5950X, ОЗУ 32 ГБ, Win 10 X64. RTX ON означает поддержку трассировки лучей в реальном времени и режима DLSS Performance (видеокарты GTX 10 не поддерживают DLSS).
+				</div>
+				<div class="design-container">
+					<div class="design-title">
+						ИННОВАЦИОННЫЙ ДИЗАЙН
+					</div>
+					<div class="design-subtitle">
+						Новая конструкция кулера с двумя осевыми вентиляторами и сквозным продувом обеспечивает оптимальную<br> 
+						рабочую температуру и максимально бесшумную работу вентилятора. Инновационный дизайн использует<br>
+						естественный воздушный поток в корпусе для уменьшения шума и температур игровой системы.
+					</div>
+					<div class="design-borderbox-wrapper"><div class="design-borderbox">
+						Архитектура NVIDIA Ampere демонстрирует максимальную производительность и энергоэффективность на ватт.
+					</div></div>
+				</div>
+				<div class="dlss-presentation">
+					<div class="dlss-title">УСКОРЕНИЕ С NVIDIA DLSS</div>
+					<div class="dlss-subtitle">МАКСИМУМ FPS И КАЧЕСТВА С ПОМОЩЬЮ ИИ</div>
+					<div class="dlss-text">
+						NVIDIA DLSS (сглаживание с алгоритмами глубокого обучения) позволяет получить огромный прирост производительности. Технология ускоряет частоту кадров, а также<br> 
+						обеспечивает новый уровень качества графики при помощи тензорных ядер в видеокартах GeForce RTX. Выкрутите настройки и разрешение на максимум и играйте<br> 
+						с потрясающей реалистичностью.
+					</div>
+					<div class="dlss-button-wrapper"><div class="dlss-button" onclick="popupShow()">
+						ПОДРОБНЕЕ О NVIDIA DLSS ❯
+					</div></div>
+					<div class="dlss-youtube-wrapper">
+						<iframe width="853" height="480" src="https://www.youtube.com/embed/BCcN8kCD90A" title="NVIDIA DLSS | Max Performance & Image Quality In Your Favorite Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="black-block"></div>
+				<div class="raytracing-presentation">
+					<div class="raytracing-title">ТРАССИРОВКА ЛУЧЕЙ</div>
+					<div class="raytracing-text">
+						
+					Трассировка лучей — это технология, моделирующая натуральное физическое поведение света. Она позволяет<br> 
+					получить максимально реалистичное изображение в графически насыщенных приложениях и играх.<br> 
+					Видеокарты GeForce RTX 30 оснащены вторым поколением ядер RT для высокоскоростной трассировки лучей.
+  
+					</div>
+					<div class="raytracing-cyberpunk-logo-wrapper"><div class="raytracing-cyberpunk-logo">
+						<img src="imgs/cyberpunk.png">
+					</div></div>
+				</div>
+				<div class="reflex-wrapper">
+					<div class="reflex-right-content">
+						<div class="reflex-right-content-title">#FPSИМЕЕТЗНАЧЕНИЕ</div>
+						<div class="reflex-right-content-text">
+							<p>NVIDIA Reflex обеспечивает уникальное конкурентное преимущество. Минимальный инпут-лаг для максимальной отзывчивости с видеокартами GeForce RTX 30, игровыми мониторами NVIDIA® G-SYNC® и технологией Reflex. Повысьте скорость реакции, прицеливайтесь точнее, попадайте в цель быстрее соперников благодаря набору передовых технологий для снижения задержки системы в соревновательных играх.</p>
+						</div>
+						
+							<div class="reflex-button" onclick="popupShow()">ПОДРОБНЕЕ О NVIDIA REFLEX ❯</div>
+						
+					</div>
+				</div>
+				<div class="game-ready-wrapper">
+					<div class="game-ready-left-content">
+						<div class="game-ready-left-content-title">ДРАЙВЕРЫ GAME READY</div>
+						<div class="game-ready-left-content-subtitle">НАИЛУЧШАЯ ПРОИЗВОДИТЕЛЬНОСТЬ В КАЖДОЙ ИГРЕ</div>
+						<div class="game-ready-left-content-text">
+							<p>Драйверы GeForce Game Ready обеспечивают наилучшую производительность в ваших любимых играх. Совместно с разработчиками мы выполнили тонкую настройку под каждую игру и протестировали тысячи конфигураций аппаратного обеспечения, чтобы гарантировать максимальную производительность и надежность. Оптимизируйте игровые настройки в один клик и получите доступ к последним технологиям с помощью драйверов NVIDIA Game Ready.</p>
+						</div>
+						
+						<div class="game-ready-button" onclick="popupShow()">ПОДРОБНЕЕ ❯</div>
+					</div>
+				</div>
+				<div id="specs" class="specs-wrapper">
+					<div class="specs">
+						<div class="specs-title">СПЕЦИФИКАЦИИ</div>
+						<div class="specs-table">
+							<table>
+							<tr><th></th><th>RTX 3080 Ti</th><th>RTX 3080</th></tr> 
+							<tr><td><p align="left">Ядра NVIDIA CUDA</td><td>10240</td><td>8960 / 8704</td></tr>
+							<tr><td><p align="left">Тактовая частота с ускорением</td><td>1.67 GHz</td><td>1.71 GHz</td></tr>
+							<tr><td><p align="left">Объем видеопамяти</td><td>12 GB</td><td>12 GB / 10 GB</td></tr>
+							<tr><td><p align="left">Быстродействие памяти</td><td>GDDR6X</td><td>GDDR6X</td></tr>
+							</table>
+						</div>
+						<div class="specs-button-wrapper"><div class="specs-button" onclick="popupShow()">ПОЛНЫЕ СПЕЦИФИКАЦИИ</div></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script>
+			let scroll_to = (id) => {
+				document.getElementById(id).scrollIntoView({behavior: "smooth"})
+			}
+		</script>
+	</body>
+</html>
